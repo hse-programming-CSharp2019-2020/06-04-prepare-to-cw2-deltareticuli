@@ -1,0 +1,9 @@
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\bin\Debug\EKRApp1.exe
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\bin\Debug\EKRApp1.pdb
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\bin\Debug\EKRLib.dll
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\bin\Debug\EKRLib.pdb
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\obj\Debug\EKRApp1.csprojAssemblyReference.cache
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\obj\Debug\EKRApp1.csproj.CoreCompileInputs.cache
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\obj\Debug\EKRApp1.csproj.CopyComplete
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\obj\Debug\EKRApp1.exe
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRApp1\obj\Debug\EKRApp1.pdb

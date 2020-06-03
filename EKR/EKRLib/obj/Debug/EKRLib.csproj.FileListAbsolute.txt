@@ -1,0 +1,6 @@
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\bin\Debug\EKRLib.dll
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\bin\Debug\EKRLib.pdb
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\obj\Debug\EKRLib.csprojAssemblyReference.cache
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\obj\Debug\EKRLib.csproj.CoreCompileInputs.cache
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\obj\Debug\EKRLib.dll
+C:\Users\Mao\RiderProjects\06-04-prepare-to-cw2-deltareticuli\EKR\EKRLib\obj\Debug\EKRLib.pdb
