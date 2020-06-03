@@ -11,21 +11,7 @@ namespace EKRApp1
     {
         private const string path = "boxes.json";
         public static Random rnd = new Random();
-
-        public static int ReadInt(string message, int left = int.MinValue, int right = int.MaxValue)
-        {
-            int res;
-            do
-            {
-                Console.Write(message);
-            } while (!int.TryParse(Console.ReadLine(), out res) || res < left || res > right);
-
-            return res;
-        }
-
-        public static double RandomDouble(double left = -3, double right = 10) =>
-            left + rnd.NextDouble() * (right - left);
-
+        
         public static void Main(string[] args)
         {
             do
@@ -40,6 +26,20 @@ namespace EKRApp1
             } while (Console.ReadKey(true).Key == ConsoleKey.Enter);
         }
 
+        public static int ReadInt(string message, int left = int.MinValue, int right = int.MaxValue)
+        {
+            int res;
+            do
+            {
+                Console.Write(message);
+            } while (!int.TryParse(Console.ReadLine(), out res) || res < left || res > right);
+
+            return res;
+        }
+
+        public static double RandomDouble(double left = -3, double right = 10) =>
+            left + rnd.NextDouble() * (right - left);
+        
         private static void SerializeCollection(Collection<Box> boxes)
         {
             DataContractJsonSerializer ser =
