@@ -14,7 +14,7 @@ namespace EKRLib
         {
             this.items = items.Where(x => Math.Abs(x.Weight) > 0.001).ToList();
         }
-        
+
         public T Current
         {
             get
@@ -31,14 +31,14 @@ namespace EKRLib
         }
 
         object IEnumerator.Current => Current;
-        
+
         public bool MoveNext() => ++position < items.Count;
 
         public void Reset()
         {
             position = -1;
         }
-        
+
         public void Dispose()
         {
         }

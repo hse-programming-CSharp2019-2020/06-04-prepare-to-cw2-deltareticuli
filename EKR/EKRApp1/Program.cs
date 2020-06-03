@@ -11,13 +11,13 @@ namespace EKRApp1
     {
         private const string path = "boxes.json";
         public static Random rnd = new Random();
-        
+
         public static void Main(string[] args)
         {
             do
             {
                 int N = ReadInt("Введите N: ", 1);
-                
+
                 Collection<Box> boxes = GetCollection(N);
                 PrintCollection(boxes);
                 SerializeCollection(boxes);
@@ -39,7 +39,7 @@ namespace EKRApp1
 
         public static double RandomDouble(double left = -3, double right = 10) =>
             left + rnd.NextDouble() * (right - left);
-        
+
         private static void SerializeCollection(Collection<Box> boxes)
         {
             DataContractJsonSerializer ser =

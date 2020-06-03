@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Threading;
 using EKRLib;
 
 namespace EKRApp2
@@ -11,7 +12,7 @@ namespace EKRApp2
     internal class Program
     {
         private const string path = "../../../EKRApp1/bin/Debug/boxes.json";
-        
+
         public static void Main(string[] args)
         {
             do
@@ -26,21 +27,27 @@ namespace EKRApp2
                 PrintCollection(boxes);
 
                 Console.WriteLine($"{Environment.NewLine}Первый LINQ-запрос: ");
-                PrintCollection(boxes.Where(x => x.GetLongestSideSize() > 3).OrderByDescending(x => x.GetLongestSideSize()));
-                
+                PrintCollection(boxes.Where(x => x.GetLongestSideSize() > 3)
+                    .OrderByDescending(x => x.GetLongestSideSize()));
+
                 Console.WriteLine($"{Environment.NewLine}Второй LINQ-запрос: ");
                 foreach (var collection in boxes.GroupBy(x => x.Weight))
                 {
                     Console.WriteLine($"Коробки с массой {collection.Key:f2}: ");
                     PrintCollection(collection);
                 }
-                
+
                 Console.WriteLine($"{Environment.NewLine}Третий LINQ-запрос: ");
+
+                double maxWeight = boxes.Max(x => x.Weight);
+                var query = boxes.Where(x => x.Weight.Equals(maxWeight));
+                PrintCollection(query);
+                Console.WriteLine($"Количество: {query.Count()}");
 
                 Console.WriteLine("Для повторного запуска нажмите Enter...");
             } while (Console.ReadKey(true).Key == ConsoleKey.Enter);
         }
-        
+
         private static void PrintCollection(IEnumerable<Box> boxes)
         {
             foreach (var box in boxes)
@@ -48,7 +55,7 @@ namespace EKRApp2
                 Console.WriteLine(box);
             }
         }
-        
+
         private static Collection<Box> DeserializeCollection()
         {
             DataContractJsonSerializer ser =
@@ -60,6 +67,7 @@ namespace EKRApp2
                 {
                     res = (Collection<Box>) ser.ReadObject(fs);
                 }
+
                 return res;
             }
             catch (IOException)

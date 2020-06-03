@@ -21,7 +21,7 @@ namespace EKRLib
                 _a = value;
             }
         }
-        
+
         [DataMember]
         public double B
         {
@@ -33,7 +33,7 @@ namespace EKRLib
                 _b = value;
             }
         }
-        
+
         [DataMember]
         public double C
         {

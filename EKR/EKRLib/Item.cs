@@ -7,7 +7,7 @@ namespace EKRLib
     public class Item : IComparable<Item>
     {
         private double _weight;
-        
+
         [DataMember]
         public double Weight
         {
@@ -21,7 +21,7 @@ namespace EKRLib
         }
 
         public static explicit operator double(Item item) => item.Weight;
-        
+
         public override string ToString() => $"Weight: {Weight:f2}";
         public int CompareTo(Item other) => Weight.CompareTo(other.Weight);
     }
